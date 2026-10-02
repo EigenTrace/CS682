@@ -1,0 +1,22 @@
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Datasets (downloaded via get_datasets.sh)
+**/datasets/*
+!**/datasets/get_datasets.sh
+!**/datasets/.gitignore
+*.npy
+*.npz
+*.pkl
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
