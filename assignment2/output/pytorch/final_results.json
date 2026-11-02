@@ -1,0 +1,7 @@
+{
+  "seed": 231,
+  "epochs": 10,
+  "best_epoch": 10,
+  "best_val_acc": 0.83,
+  "test_acc": 0.8145
+}

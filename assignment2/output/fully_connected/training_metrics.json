@@ -1,0 +1,21 @@
+{
+  "training_examples": 49000,
+  "validation_examples": 1000,
+  "test_examples": 1000,
+  "two_layer_best_validation_accuracy": 0.532,
+  "three_layer_overfit_first_perfect_epoch": 11,
+  "five_layer_overfit_first_perfect_epoch": 14,
+  "overfit_training_accuracy": 1.0,
+  "best_fully_connected_validation_accuracy": 0.551,
+  "best_fully_connected_test_accuracy": 0.556,
+  "best_model_hidden_dims": [
+    256,
+    128
+  ],
+  "best_model_normalization": "batchnorm",
+  "best_model_dropout_keep_probability": 0.9,
+  "best_model_epochs": 12,
+  "best_model_optimizer": "adam",
+  "checkpoint": "best_model.pkl",
+  "execution": "All code cells executed in FullyConnectedNets.ipynb; final test evaluated once after validation selection."
+}

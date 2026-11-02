@@ -5,6 +5,7 @@ from builtins import range
 from builtins import object
 import os
 import pickle as pickle
+import copy
 
 import numpy as np
 
@@ -156,6 +157,7 @@ class Solver(object):
         self.epoch = 0
         self.best_val_acc = 0
         self.best_params = {}
+        self.best_bn_params = None
         self.loss_history = []
         self.train_acc_history = []
         self.val_acc_history = []
@@ -301,6 +303,10 @@ class Solver(object):
                     self.best_params = {}
                     for k, v in self.model.params.items():
                         self.best_params[k] = v.copy()
+                    if hasattr(self.model, 'bn_params'):
+                        self.best_bn_params = copy.deepcopy(self.model.bn_params)
 
         # At the end of training swap the best params into the model
         self.model.params = self.best_params
+        if self.best_bn_params is not None:
+            self.model.bn_params = copy.deepcopy(self.best_bn_params)

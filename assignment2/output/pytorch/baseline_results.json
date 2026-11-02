@@ -1,0 +1,8 @@
+{
+  "Barebones FC": 0.42,
+  "Barebones CNN": 0.494,
+  "Module FC": 0.424,
+  "Module CNN": 0.494,
+  "Sequential FC": 0.444,
+  "Sequential CNN": 0.591
+}
