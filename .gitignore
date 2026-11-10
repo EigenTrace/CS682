@@ -13,6 +13,14 @@
 *.pkl
 *.h5
 
+# Assignment 3 datasets and model checkpoints
+/assignment3/data/
+/assignment3/pretrained_model/
+
+# Keep Assignment 3 download scripts and supplied check data
+!/assignment3/cs682/datasets/get_*.sh
+!/assignment3/style-transfer-checks*.npz
+
 # Python
 __pycache__/
 *.pyc
